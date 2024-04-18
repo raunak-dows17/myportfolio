@@ -30,8 +30,8 @@ const Projects = () => {
             <ProjectCards
               imgPath={sayin}
               isBloag={false}
-              title="Sayin Chat"
-              description=" I designed and developed a web application using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and integrated the Socket.IO library to provide a real-time, interactive chat experience. The application includes features for one-on-one personalized chat, group chat, as well as user authentication with login and signup functionality."
+              title="Koalatale"
+              description=" I designed and developed a web application using the Nextjs and Flutter for frontend, Node and Express for backend and MongoDB as database. The kaoalatale is story collaboration application in which writers can write and contribute on the other's story more like git and github."
               ghLink="https://github.com/raunak-dows17/koalatale_web"
               demoLink="https://koalatale.com/"
             />

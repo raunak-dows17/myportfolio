@@ -11,6 +11,7 @@ import Portfolios from "../../Assets/Projects/portfolio-influencer.png";
 import E_commerce from "../../Assets/Projects/e-commerce.png";
 import News from "../../Assets/Projects/news_application.jpg";
 import Weather from "../../Assets/Projects/weather_app.jpg";
+import Weather from "../../Assets/Projects/koalatale.png";
 
 const Projects = () => {
   return (
@@ -31,8 +32,18 @@ const Projects = () => {
               isBloag={false}
               title="Sayin Chat"
               description=" I designed and developed a web application using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and integrated the Socket.IO library to provide a real-time, interactive chat experience. The application includes features for one-on-one personalized chat, group chat, as well as user authentication with login and signup functionality."
+              ghLink="https://github.com/raunak-dows17/koalatale_web"
+              demoLink="https://koalatale.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={sayin}
+              isBloag={false}
+              title="Sayin Chat"
+              description=" I designed and developed a web application using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and integrated the Socket.IO library to provide a real-time, interactive chat experience. The application includes features for one-on-one personalized chat, group chat, as well as user authentication with login and signup functionality."
               ghLink="https://github.com/raunak-dows17/Realtime-Chat-Application"
-              demoLink="https://sayin.herokuapp.com/"
+              // demoLink="https://sayin.herokuapp.com/"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -52,7 +63,7 @@ const Projects = () => {
               title="E-Commerce"
               description='I conceptualized and developed an e-commerce website called "Wednesday Market" using the MERN stack (MongoDB, Express.js, React.js, and Node.js). Wednesday Market is a comprehensive online platform that specializes in fashion products for all genders and seasons. The website offers a seamless shopping experience, complete with user authentication, signup/login functionality, and UPI payment gateways.'
               ghLink="https://github.com/raunak-dows17/wm_e-commerce"
-              demoLink="https://wm-e-commerce.vercel.app/"
+              // demoLink="https://wm-e-commerce.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">

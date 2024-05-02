@@ -11,7 +11,7 @@ import Portfolios from "../../Assets/Projects/portfolio-influencer.png";
 import E_commerce from "../../Assets/Projects/e-commerce.png";
 import News from "../../Assets/Projects/news_application.jpg";
 import Weather from "../../Assets/Projects/weather_app.jpg";
-import Weather from "../../Assets/Projects/koalatale.png";
+import Koalatale from "../../Assets/Projects/koalatale.png";
 
 const Projects = () => {
   return (
@@ -28,7 +28,7 @@ const Projects = () => {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCards
-              imgPath={sayin}
+              imgPath={Koalatale}
               isBloag={false}
               title="Koalatale"
               description=" I designed and developed a web application using the Nextjs and Flutter for frontend, Node and Express for backend and MongoDB as database. The kaoalatale is story collaboration application in which writers can write and contribute on the other's story more like git and github."
@@ -43,7 +43,7 @@ const Projects = () => {
               title="Sayin Chat"
               description=" I designed and developed a web application using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and integrated the Socket.IO library to provide a real-time, interactive chat experience. The application includes features for one-on-one personalized chat, group chat, as well as user authentication with login and signup functionality."
               ghLink="https://github.com/raunak-dows17/Realtime-Chat-Application"
-              // demoLink="https://sayin.herokuapp.com/"
+              demoLink="https://sayin.up.railway.app/"
             />
           </Col>
           <Col md={4} className="project-card">

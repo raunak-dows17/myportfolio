@@ -1,25 +1,20 @@
-import Acomplishments from '../components/Acomplishments/Acomplishments';
-import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
-import Hero from '../components/Hero/Hero';
-import Projects from '../components/Projects/Projects';
-import Technologies from '../components/Technologies/Technologies';
-import Timeline from '../components/TimeLine/TimeLine';
-import { Layout } from '../layout/Layout';
-import { Section } from '../styles/GlobalComponents';
+import Home from "../components/Home/Home";
+import Journey from "../components/Journey/Journey";
+import Seo from "../components/Seo";
+import Stats from "../components/Stats/Stats";
+import { profile } from "../data/content";
 
-const Home = () => {
+export default function HomePage() {
   return (
-    <Layout>
-      <Section grid>
-        <Hero />
-        <BgAnimation />
-      </Section>
-      <Projects />
-      <Technologies />
-      <Timeline />
-      <Acomplishments />
-    </Layout>
+    <>
+      <Seo
+        title="Raunak Pandey | Flutter & Node.js Developer"
+        description={profile.summary}
+        path="/"
+      />
+      <Home />
+      <Journey />
+      <Stats />
+    </>
   );
-};
-
-export default Home;
+}

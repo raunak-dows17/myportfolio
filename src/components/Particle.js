@@ -1,5 +1,6 @@
-import React from "react";
-import Particles from "react-tsparticles";
+import dynamic from "next/dynamic";
+
+const Particles = dynamic(() => import("react-tsparticles"), { ssr: false });
 
 function Particle() {
   return (

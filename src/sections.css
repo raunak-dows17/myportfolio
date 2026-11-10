@@ -1,0 +1,267 @@
+/* ---------------------------------------------------------------
+   New sections added during the Next.js migration.
+   The original style.css is intentionally left untouched.
+--------------------------------------------------------------- */
+
+/* My Journey timeline */
+.journey-section {
+  position: relative;
+  padding: 70px 0 20px;
+  color: #fff;
+}
+
+.journey-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.journey-subtitle {
+  max-width: 720px;
+  margin: 8px auto 36px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.journey-track {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0 0 16px;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.journey-track::-webkit-scrollbar {
+  display: none;
+}
+
+.journey-item {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: left;
+  scroll-snap-align: start;
+}
+
+.journey-year {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.journey-line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #5fa1f8 0%,
+    rgba(95, 161, 248, 0.05) 100%
+  );
+}
+
+.journey-text {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.journey-dots {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .journey-section {
+    padding-top: 50px;
+  }
+
+  .journey-inner {
+    padding: 0 16px;
+  }
+
+  .journey-track {
+    gap: 20px;
+  }
+
+  .journey-item {
+    flex: 0 0 78%;
+    min-width: 78%;
+    max-width: 78%;
+  }
+
+  .journey-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .journey-dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    transition: all 0.25s ease;
+  }
+
+  .journey-dot.active {
+    background: #5fa1f8;
+    transform: scale(1.4);
+  }
+}
+
+/* Professional stats strip */
+.stats-section {
+  padding: 20px 0 80px;
+  color: #fff;
+}
+
+.stats-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.stats-box {
+  padding: 24px;
+  border: 1px solid rgba(95, 161, 248, 0.22);
+  border-radius: 12px;
+  background: rgba(33, 45, 69, 0.55);
+  box-shadow: 0 4px 12px rgba(5, 16, 29, 0.25);
+}
+
+.stats-number {
+  margin: 0 0 6px;
+  color: #5fa1f8;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.stats-label {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .stats-inner {
+    padding: 0 16px;
+  }
+
+  .stats-grid {
+    gap: 14px;
+  }
+
+  .stats-box {
+    padding: 18px;
+  }
+
+  .stats-number {
+    font-size: 1.8rem;
+  }
+
+  .stats-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Experience and education timeline */
+.experience-block,
+.education-block {
+  padding: 34px 0 10px;
+  text-align: left;
+}
+
+.experience-block .resume-left,
+.education-block .resume-left {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.experience-block .resume-item,
+.education-block .resume-item {
+  padding-bottom: 24px;
+}
+
+.experience-block .resume-item:last-child,
+.education-block .resume-item:last-child {
+  padding-bottom: 10px;
+}
+
+.experience-company {
+  margin: 0 0 4px;
+  color: #5fa1f8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.experience-company span {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 400;
+}
+
+.experience-period {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.experience-block .resume-item ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.experience-block .resume-item ul li {
+  position: relative;
+  padding-bottom: 8px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  list-style: none;
+  text-align: left;
+}
+
+.experience-block .resume-item ul li::before {
+  content: "▹";
+  position: absolute;
+  left: -18px;
+  color: #5fa1f8;
+}
+
+/* 404 page */
+.not-found-section {
+  min-height: 70vh;
+  padding-top: 180px;
+}
+
+.not-found-text {
+  margin: 10px 0 30px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+}
+
+.not-found-button {
+  display: inline-block;
+}

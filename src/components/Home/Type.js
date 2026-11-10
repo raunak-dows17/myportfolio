@@ -1,15 +1,14 @@
-import React from "react";
-import Typewriter from "typewriter-effect";
+import dynamic from "next/dynamic";
+
+import { typewriter } from "../../data/content";
+
+const Typewriter = dynamic(() => import("typewriter-effect"), { ssr: false });
 
 function Type() {
   return (
     <Typewriter
       options={{
-        strings: [
-          "Web Developer",
-          "MERN Stack Developer",
-          "Mobile App Developer",
-        ],
+        strings: typewriter,
         autoStart: true,
         loop: true,
         deleteSpeed: 69,

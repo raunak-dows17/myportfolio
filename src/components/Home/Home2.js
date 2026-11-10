@@ -1,13 +1,14 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+import { Col, Container, Row } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineTwitter,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Tilt from "react-parallax-tilt";
+
+import myImg from "../../Assets/avatar.svg";
+import { profile, socials } from "../../data/content";
 
 function Home2() {
   return (
@@ -19,27 +20,21 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> HTML, CSS, Java and Javascript. </b>
-              </i>
+              {profile.intro}
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and in{" "}
-                <b className="purple">Next js and React js.</b>
-              </i>
-              <br />
-              <br />
+              I&apos;m focused on building software that works at scale, with
+              clean architecture, strong developer workflows, and AI-assisted
+              engineering.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg.src}
+                className="img-fluid"
+                alt="Raunak Pandey avatar"
+              />
             </Tilt>
           </Col>
         </Row>
@@ -52,40 +47,44 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/raunak-dows17"
+                  href={socials.github}
                   target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  rel="noopener noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="GitHub"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/RaunakP17102002"
+                  href={socials.twitter}
                   target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  rel="noopener noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="Twitter"
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/raunak-pandey-93b92a224/"
+                  href={socials.linkedin}
                   target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  rel="noopener noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/raunak_pandey_1710/"
+                  href={socials.instagram}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="Instagram"
                 >
                   <AiFillInstagram />
                 </a>
@@ -97,4 +96,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

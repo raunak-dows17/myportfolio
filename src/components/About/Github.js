@@ -1,6 +1,9 @@
-import React from "react";
-import GitHubCalendar from "react-github-calendar";
+import dynamic from "next/dynamic";
 import { Row } from "react-bootstrap";
+
+const GitHubCalendar = dynamic(() => import("react-github-calendar"), {
+  ssr: false,
+});
 
 function Github() {
   return (

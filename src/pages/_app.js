@@ -17,13 +17,13 @@ export default function App({ Component, pageProps }) {
   const [load, setLoad] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoad(false), 1200);
+    const timer = setTimeout(() => setLoad(false), 0);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
-      <Pre load={load} />
+      {/* <Pre load={load} /> */}
       <main className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />

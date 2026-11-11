@@ -144,9 +144,18 @@ export const projects = [
       "Autonomous LLM-powered agent that plans multi-step tasks, calls external tools and APIs through function calling, and retains context using memory and RAG.",
     image: "/assets/projects/agentic-ai.svg",
     tags: ["Agentic AI", "LLM", "RAG", "MCP"],
-    source: "https://github.com/raunak-dows17",
+    source: "https://github.com/raunak-dows17/arc",
     visit: "",
     status: "In Progress",
+  },
+  {
+    title: "Agentic AI Local and Personal RAG Based Assistant",
+    description:
+      "A local-first personal AI assistant with citation-backed web research and persistent RAG memory, powered by Ollama with optional cloud models.",
+    image: "/assets/projects/openarc_post.png",
+    tags: ["Agentic AI", "LLM", "RAG", "MCP"],
+    source: "https://github.com/raunak-dows17/openarc",
+    visit: "",
   },
   {
     title: "raw_cli & raw_lib_flutter",
@@ -154,7 +163,7 @@ export const projects = [
       "CLI and Flutter library tools that cut development boilerplate and improve developer productivity.",
     image: "/assets/projects/raw-cli.svg",
     tags: ["Dart", "Flutter", "CLI", "Tooling"],
-    source: "https://github.com/raunak-dows17",
+    source: "https://github.com/raunak-dows17/raw_lib",
     visit: "",
   },
   {
